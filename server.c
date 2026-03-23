@@ -32,5 +32,5 @@ int main()
 		pthread_create(&tid, NULL, handle_client, conn_fd); 
 		pthread_detach(tid);  
 	}
-
+	close(sockfd);
 }
