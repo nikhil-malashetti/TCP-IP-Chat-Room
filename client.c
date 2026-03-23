@@ -116,6 +116,7 @@ int main()
 			exit(0);
 		}
 	}
+	close(sockfd);
 }
 
 void *recv_handler(void *args)
